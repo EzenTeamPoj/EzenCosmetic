@@ -147,7 +147,7 @@ div#wrap.wishlistWrap div#contents{
 	text-align: center;
 }
 
-.wishlistWrap table#wishlistTbl tfoot button#orderMoveBtn {
+.wishlistWrap table#wishlistTbl tfoot button.cartInsertBtn{
 	width: 250px;
 	height: 50px;
 	font-size: 25px;

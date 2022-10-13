@@ -4,20 +4,21 @@
     
 <%
 	request.setCharacterEncoding("UTF-8");
-	String [] num =request.getParameterValues("num");
+	String uId_Session = (String)session.getAttribute("uId_Session"); 
+	String [] pNum =request.getParameterValues("pNum");
 	
-	int rtnCnt = objBoard.deleteCartMulti(num);
+	int rtnCnt = objBoard.insertCartMulti(uId_Session, pNum);
 	
-	if(num.length==rtnCnt) { %>
+	if(pNum.length==rtnCnt) { %>
 		<script>
-			alert("삭제되었습니다.");
+			alert("장바구니에 추가되었습니다.");
 			location.href="/cart/cartList.jsp";
 		</script>
 <% 
 	} else {   %>
 		<script>
-			alert("장바구니 삭제에 문제가 발생했습니다.");		
-			location.href="/cart/cartList.jsp";
+			alert("장바구니 추가에 오류가 발생했습니다.");
+			location.href="/wishlist/wishlist.jsp";
 		</script>
 <% 		
 		

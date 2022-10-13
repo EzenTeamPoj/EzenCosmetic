@@ -452,6 +452,56 @@ public class ProdBoardMgr {
 	/* 장바구니에 넣기 끝 */
 	
 	
+	/* 장바구니 다중 넣기 시작 */
+	public int insertCartMulti(String uId, String [] pNumArr) {
+
+		String sql = null;
+
+		int exeCnt = 0; // 삭제 데이터 수, DB 삭제가 실행되었는지 여부 판단
+
+		try {
+			
+			objConn = objPool.getConnection();
+			for (int i = 0; i < pNumArr.length; i++) {
+				
+				sql = "select num from cart where uId = ? and pNum = ?";
+				objPstmt = objConn.prepareStatement(sql);
+				objPstmt.setString(1, uId);
+				int pNum = Integer.parseInt(pNumArr[i]);
+				objPstmt.setInt(2, pNum);
+				objRS = objPstmt.executeQuery();
+				if(objRS.next()) {
+					int num = objRS.getInt("num");
+					sql = "update cart set pVolumn = pVolumn + 1 where num=?";
+					objPstmt = objConn.prepareStatement(sql);
+					objPstmt.setInt(1, num);
+					exeCnt += objPstmt.executeUpdate();
+				} else {
+					sql = "insert into cart (uId, pNum, pVolumn) values (?, ?, 1)";
+					objPstmt = objConn.prepareStatement(sql);
+					objPstmt.setString(1, uId);
+					objPstmt.setInt(2, pNum);
+					exeCnt += objPstmt.executeUpdate();
+				}
+				
+			}
+			
+
+		} catch (Exception e) {
+			System.out.println("Exception : " + e.getMessage());
+		} finally {
+			objPool.freeConnection(objConn, objPstmt, objRS);
+		}
+
+		return exeCnt;
+	}
+
+	
+	
+	
+	/* 장바구니 다중 넣기 끝 */
+	
+	
 	/* 장바구니 리스트 시작*/
 	public Vector<CartBean> getCartList(String uId) {
 

@@ -51,7 +51,7 @@ $(function(){
 		let delToF = confirm("정말로 삭제하시겠습니까?");
 		if (delToF) {
 			$("input.chkOne:checked").each(function () {
-		     	$(this).parents("tr").find("input.num").attr("name", "num");
+		     	$(this).parents("tr").find("input.delNum").attr("name", "num");
 			});	
 			$("form#multiDelFrm").submit();	
 		} else {
@@ -64,14 +64,26 @@ $(function(){
 	$("button.oneDelBtn").click(function(){
 		let delToF = confirm("정말로 삭제하시겠습니까?");
 		if (delToF) {
-			let num = $(this).parents("tr").find("input.num").val();
+			let num = $(this).parents("tr").find("input.delNum").val();
 			location.href="/wishlist/wishOneDelProc.jsp?num="+num;
 		} else {
 			alert("취소하셨습니다.");
 		}
 	});
 	/* 위시리스트 개별 삭제 시작*/
+	
+	
+	/* 장바구니 다중 넣기 시작*/
+	$("button.cartInsertBtn").click(function(){
 
+
+		$("input.chkOne:checked").each(function () {
+		     $(this).parents("tr").find("input.pNum").attr("name", "pNum");
+		});	
+		$("form#multiDelFrm").submit();	
+		
+	});
+	/* 장바구니 다중 넣기 끝*/
 });
 
 

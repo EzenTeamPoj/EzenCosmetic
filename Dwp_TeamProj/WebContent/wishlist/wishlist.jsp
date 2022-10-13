@@ -153,9 +153,9 @@
 									<td>
 										<a href="/product/prodRead.jsp?num=<%=pNum%>" class="pNamePrn"><%=pName%></a>
 										<!-- 수정함 -->
-										<input type="hidden" name ="pNum" value="<%=pNum%>">
 										<input type="hidden" name ="pName" value="<%=pName%>">
-										<input type="hidden" value="<%=num %>" form="multiDelFrm" class="num">
+										<input type="hidden" value="<%=num %>" form="multiDelFrm" class="delNum">
+										<input type="hidden" value="<%=pNum%>" form="cartMulInsertFrm" class="pNum">
 									</td>
 									<td><%=df.format(sellPrice) %></td>
 									<td>
@@ -174,7 +174,7 @@
 									<button type="button" id="multiDelBtn" form="multiDelFrm">선택삭제</button>
 								</td>
 								<td colspan="3">
-									<button type="submit" id="orderMoveBtn">장바구니에 담기</button>
+									<button type="submit" class="cartInsertBtn" form="cartMulInsertFrm">장바구니에 담기</button>
 								</td>
 							</tr>
 							<tr id="listPagingArea">
@@ -247,6 +247,6 @@
 		<iframe src="/indd/footer.jsp" scrolling="no" width="100%" frameborder=0 id="footerIfm"></iframe>
 		
 		<form action="/wishlist/wishMulDelProc.jsp" id="multiDelFrm"></form>
-		<iframe width="0" height="0" class="cartModIfr" style="display: none"></iframe>
+		<form action="/cart/cartMulInsertProc.jsp" id="cartMulInsertFrm"></form>
 	</body>
 </html>

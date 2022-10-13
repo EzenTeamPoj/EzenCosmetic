@@ -9,12 +9,17 @@
 	int rtnCnt = objBoard.deleteCartOne(num);
 	
 	if(rtnCnt==1) { %>
-		alert("삭제되었습니다.");
+		<script>
+			alert("삭제되었습니다.");
+			location.href="/cart/cartList.jsp";
+		</script>
 <% 
-		response.sendRedirect("/cart/cartList.jsp"); 
 	} else {   %>
-		alert("장바구니 삭제에 문제가 발생했습니다.");
-<% 		response.sendRedirect("/cart/cartList.jsp");
+		<script>
+			alert("장바구니 삭제에 문제가 발생했습니다.");		
+			location.href="/cart/cartList.jsp";
+		</script>
+<% 	
 		
 	}
 %>
