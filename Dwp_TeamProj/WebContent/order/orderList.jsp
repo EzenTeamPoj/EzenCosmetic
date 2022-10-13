@@ -165,9 +165,9 @@
 											 pName=objGoodsBean.getpName();
 										
 								%>
-										<div class="dFlex">
-											<div><%=pName %></div>
-											<div><%=pVolumn %>개</div>
+										<div class="dFlex oNameVolumn">
+											<div class="oName"><a href="/product/prodRead.jsp?num=<%=pNum%>"><%=pName %></a></div>
+											<div class="oVolumn"><%=pVolumn %>개</div>
 										</div>
 								<%} %>
 									</td>

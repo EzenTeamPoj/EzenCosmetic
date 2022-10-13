@@ -60,8 +60,8 @@ div#wrap.orderListWrap div#contents{
 	border-left: none;
 }
 .orderListWrap table#orderListTbl th:first-child{
-	width: 150px;
-	padding: 10px 5px;
+	padding: 10px 2px;
+	width: 80px;
 
 }
 
@@ -96,11 +96,28 @@ div#wrap.orderListWrap div#contents{
 }
 
 .orderListWrap table#orderListTbl th:nth-child(2) {
-	width: 200px;
+	width: 300px;
 }
 .orderListWrap table#orderListTbl td:nth-child(2) {
-	width: 200px;
+	width: 300px;
 	font-size: 18px;
+}
+
+.orderListWrap table#orderListTbl td:nth-child(2) div.oNameVolumn {
+	padding: 0px 10px;
+	justify-content: space-between;
+}
+
+.orderListWrap table#orderListTbl td:nth-child(2) div.oNameVolumn:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+
+.orderListWrap table#orderListTbl td:nth-child(2) div.oName {
+	width: 230px;
+}
+.orderListWrap table#orderListTbl td:nth-child(2) div.oVolumn {
+	width: 30px;
 }
 
 .orderListWrap table#orderListTbl th:nth-child(3),

@@ -78,7 +78,7 @@
 		<div id="wrap" class="orderWrap">
 			<h1>주문/결제</h1>
 			<hr>
-			<form action="/order/orderProc.jsp">
+			<form action="/order/orderProc.jsp" id="orderFrm">
 			
 				<table>
 					<tbody>
@@ -179,15 +179,15 @@
 							</td>
 						</tr>
 						<tr>
-							<th>지불수단</th>
+							<th>결제수단</th>
 							<td>
 								<label>
 									<span>계좌이체</span>
-									<input type="radio" name="payWay" value="계좌이체">
+									<input type="radio" name="payWay" class="payWay" value="계좌이체">
 								</label>
 								<label>
 									<span>신용/체크카드</span>
-									<input type="radio" name="payWay" value="신용/체크카드">
+									<input type="radio" name="payWay" class="payWay" value="신용/체크카드">
 								</label>
 							</td>
 						</tr>
