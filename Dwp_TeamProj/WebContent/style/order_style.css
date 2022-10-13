@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+
+
+
+
+
+/*///////////////// ordrList 시작  /////////////////////*/
+/* 여기도 수정함 복붙 */
+
+
+div#wrap.orderListWrap div#contents{
+	margin: 50px auto;
+	flex: 1; 
+}
+
+.orderListWrap div#title {
+	margin: 20px 50px 50px;
+}
+
+.orderListWrap div#title>h1 {
+	padding-left: 10px;
+}
+
+.orderListWrap div#pageInfo {
+	width: 900px;
+	justify-content: space-between;
+	margin: 20px 50px;
+
+}
+.orderListWrap div#tblNumInfo>span:first-child{
+	margin-right: 20px;
+}
+
+.orderListWrap table#orderListTbl {
+	width: 900px;
+	margin-left: 50px;
+	border-collapse: collapse;
+	
+	text-align: center;
+}
+.orderListWrap table#orderListTbl th {
+	background-color: rgba(255, 0, 0, 0.1);
+	
+}
+.orderListWrap table#orderListTbl tbody th,
+.orderListWrap table#orderListTbl tbody td {
+	border: 1px solid #000;
+	
+}
+
+.orderListWrap table#orderListTbl th:last-child,
+.orderListWrap table#orderListTbl td:last-child {
+	border-right: none;
+	text-align: center;
+}
+
+.orderListWrap table#orderListTbl th:first-child,
+.orderListWrap table#orderListTbl td:first-child {
+	border-left: none;
+}
+.orderListWrap table#orderListTbl th:first-child{
+	width: 150px;
+	padding: 10px 5px;
+
+}
+
+
+.orderListWrap table#orderListTbl tbody td {
+	padding: 10px 0 10px 8px;
+}
+
+
+.orderListWrap table#orderListTbl td input.chkOne {
+	margin-right: 20px;
+	
+}
+
+.orderListWrap table#orderListTbl td img {
+	vertical-align: middle;
+	
+}
+
+.orderListWrap table#orderListTbl label {
+	cursor: pointer;
+}
+
+.orderListWrap table#orderListTbl input[type=number] {
+	text-align: center;
+}
+
+
+
+.orderListWrap table#orderListTbl a.pNamePrn:hover {
+	color: #aaa;
+}
+
+.orderListWrap table#orderListTbl th:nth-child(2) {
+	width: 200px;
+}
+.orderListWrap table#orderListTbl td:nth-child(2) {
+	width: 200px;
+	font-size: 18px;
+}
+
+.orderListWrap table#orderListTbl th:nth-child(3),
+.orderListWrap table#orderListTbl td:nth-child(3) {
+	width: 150px;
+	text-align: center;
+}
+
+.orderListWrap table#orderListTbl td:nth-child(3) {
+	font-size: 18px;
+}
+
+.orderListWrap table#orderListTbl td:last-child button {
+	width: 24px;
+	height: 24px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+
+
+
+.orderListWrap table#orderListTbl tfoot tr:first-child>td:first-child {
+	padding-top: 20px;
+	vertical-align: top;
+}
+.orderListWrap table#orderListTbl tfoot tr:first-child>td:first-child>button {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+	
+}
+
+.orderListWrap table#orderListTbl tfoot tr:first-child>td:last-child {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.orderListWrap table#orderListTbl tfoot button#orderMoveBtn {
+	width: 250px;
+	height: 50px;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+	
+	margin-right: 160px;
+	
+	background-color: pink;
+	border: none;
+	outline: none;
+}
+
+
+/* 리스트 /bbs/list.jsp  페이징 영역 시작 */
+
+.orderListWrap tr#listPagingArea{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.orderListWrap tr#listPagingArea span {
+	width: 30px;
+	height: 30px;
+	font-weight: 12px;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.orderListWrap tr#listPagingArea span:hover {
+	color: #aaa;
+}
+
+.orderListWrap tr#listPagingArea span.nowPageNum {
+	font-size: 16px;
+	font-weight: bold;
+	background-color: rgba(136, 136, 136, 0.1);
+	cursor: default;
+}
+
+.orderListWrap tr#listPagingArea span.moveBlockArea {
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	margin: 0 6px;
+	display: inline-block;
+}
+/* 리스트 /bbs/list.jsp  페이징 영역 끝 */
+
+
+
+/*/////////////////  ordrList 끝  /////////////////////*/
+
+/*///////////////  orde 시작  /////// /////////*/
+div#wrap.orderWrap table{
+	width: 600px;
+	margin: 20px 300px;
+}
+
+div#wrap.orderWrap table th {
+	padding: 10px 5px;
+}
+
+div#wrap.orderWrap table th {
+	width: 200px;
+}
+
+div#wrap.orderWrap table td input.refList {
+	width: 350px;
+}
+div#wrap.orderWrap table td.center{
+	text-align: left;
+	justify-content: space-between;
+}
+
+div#wrap.orderWrap button#orderBtn {
+	width: 100%;
+	height: 40px;
+	font-size: 22px;
+	font-weight: bold;
+	
+	margin-top: 30px;
+	
+	background-color: rgba(255, 0, 0, 0.1);
+	border: none;
+	outline: none;
+}
+/*///////////////  order끝 ///////  /////////*/
+
+/* 시작 */
+
+/* 끝 */

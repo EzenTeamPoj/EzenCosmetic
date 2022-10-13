@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+
+
+
+/*///////////////// div#wrap 시작  /////////////////////*/
+div#wrap.cartListWrap div#contents{
+	margin: 50px auto;
+	flex: 1;
+}
+
+.cartListWrap main#main {
+	margin-top: 20px;
+}
+
+.cartListWrap div#title {
+	margin: 20px 50px 90px;
+}
+
+.cartListWrap div#title>h1 {
+	padding-left: 10px;
+}
+
+.cartListWrap table#cartTbl {
+	width: 900px;
+	margin-left: 50px;
+	border-collapse: collapse;
+}
+.cartListWrap table#cartTbl th {
+	background-color: rgba(255, 0, 0, 0.1);
+	
+}
+.cartListWrap table#cartTbl th,
+.cartListWrap table#cartTbl td {
+	border: 1px solid #000;
+	border-left: none;
+}
+
+.cartListWrap table#cartTbl th:first-child,
+.cartListWrap table#cartTbl td:first-child {
+	border-right: none;
+}
+
+.cartListWrap table#cartTbl th:nth-child(3),
+.cartListWrap table#cartTbl td:nth-child(5) {
+	border-right: none;
+}
+
+
+.cartListWrap table#cartTbl th:last-child,
+.cartListWrap table#cartTbl td:last-child {
+	border-right: none;
+	padding-right: 20px;
+}
+
+
+.cartListWrap table#cartTbl th:first-child{
+	width: 150px;
+	text-align: left;
+	padding: 10px 5px;
+
+}
+
+
+.cartListWrap table#cartTbl tbody td {
+	padding: 10px 0 10px 8px;
+}
+
+
+.cartListWrap table#cartTbl td input.chkOne {
+	margin-right: 20px;
+	
+}
+
+.cartListWrap table#cartTbl td img {
+	vertical-align: middle;
+	
+}
+
+.cartListWrap table#cartTbl label {
+	cursor: pointer;
+}
+
+.cartListWrap table#cartTbl input[type=number] {
+	text-align: center;
+}
+.cartListWrap table#cartTbl input[type=number]::-webkit-outer-spin-button,
+.cartListWrap table#cartTbl input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.cartListWrap table#cartTbl a.pNamePrn:hover {
+	color: #aaa;
+}
+.cartListWrap table#cartTbl th:nth-child(2) {
+	width: 350px;
+}
+.cartListWrap table#cartTbl td:nth-child(2) {
+	width: 350px;
+	font-size: 18px;
+}
+.cartListWrap table#cartTbl th:nth-child(3) {
+	width: 100px;
+	text-align: center;
+}
+.cartListWrap table#cartTbl td:nth-child(3) {
+	width: 100px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.cartListWrap table#cartTbl td:nth-child(4) {
+	width: 100px;
+	text-align: center;
+}
+
+.cartListWrap table#cartTbl td input.orderVolumn {
+	width: 50px;
+}
+cartListWrap table#cartTbl td:nth-child(5) {
+	width: 100px;
+}
+.cartListWrap table#cartTbl td:nth-child(5) {
+	width: 100px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.cartListWrap table#cartTbl td:last-child {
+	width: 20px;
+}
+.cartListWrap table#cartTbl td:last-child button{
+	width: 24px;
+	height: 24px;
+	font-size: 18px;
+	line-height: 24px;
+	
+}
+
+.cartListWrap table#cartTbl tfoot tr:first-child>td:first-child {
+	padding-top: 20px;
+	vertical-align: top;
+}
+.cartListWrap table#cartTbl tfoot tr:first-child>td:first-child>button {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+	
+}
+
+.cartListWrap table#cartTbl tfoot tr:first-child>td:last-child {
+	padding: 30px 50px 30px 0;
+	text-align: center;
+}
+.cartListWrap table#cartTbl tfoot tr:last-child>td:last-child {
+	padding: 60px 0;
+	text-align: center;
+}
+.cartListWrap table#cartTbl tfoot button#orderMoveBtn {
+	width: 250px;
+	height: 50px;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+	
+	background-color: pink;
+	border: none;
+	outline: none;
+}
+
+/*///////////////// div#wrap 끝  /////////////////////*/
+
+/*//////// 시작  /////////*/
+
+/*//////// 끝  /////////*/
+
+/* 시작 */
+
+/* 끝 */

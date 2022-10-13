@@ -1,0 +1,437 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// 공통사항 시작 ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+main#main {
+	padding: 50px 100px;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// 공통사항 끝 ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// prodList.jsp 시작 ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+.prodListWrap div#pageInfo {
+	width: 1000px;
+	justify-content: space-between;
+}
+.prodListWrap div#tblNumInfo>span:first-child{
+	margin-right: 20px;
+}
+.prodListWrap div#orderArea li {
+	padding-left: 10px;
+	
+}
+.prodListWrap div#orderArea li span {
+	cursor: pointer;
+}
+.prodListWrap div#orderArea li input.orderBy {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+.prodListWrap ul#prodBBS {
+	width: 1000px;
+	padding: 30px;
+	flex-wrap: wrap;
+}
+
+.prodListWrap li.prod {
+	margin: 0 40px 40px;
+	cursor: pointer;
+	
+	width: 230px;
+}
+
+
+.prodListWrap li.prod div.label {
+	height: 40px;
+}
+.prodListWrap li.prod div.label>div {
+	padding: 3px;
+	margin: 10px 10px 5pX 0;
+	
+}
+
+.prodListWrap li.prod div.label>div:first-child {
+	background-color: #f22;
+}
+
+.prodListWrap li.prod div.label>div:nth-child(2) {
+	background-color: #fc1;
+}
+
+.prodListWrap li.prod div.label>div:last-child {
+	background-color: #08f;
+}
+
+.prodListWrap li.prod div.pName {
+	font-size: 19px;
+	line-height: 25px;
+	margin-bottom: 5px;
+}
+
+.prodListWrap li.prod div.priceArea div.oPrice {
+	font-size: 14px;
+	text-decoration: line-through;
+}
+
+.prodListWrap li.prod div.priceArea div.sPrice {
+	margin-top: 5px;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+
+/* 리스트 페이지 버튼 공통 스타일 시작 */
+div#listBtnArea button {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+}
+/* 리스트 페이지 버튼 공통 스타일 끝 */
+
+/* 리스트 /bbs/list.jsp 글쓰기, 검색 영역 시작 */
+div#listBtnArea form#searchFrm {
+	padding-top: 20px;
+	justify-content: flex-end;
+}
+
+div#listBtnArea form#searchFrm div {
+	margin: 4px;
+}
+
+div#listBtnArea form#searchFrm select, 
+div#listBtnArea form#searchFrm input {
+	font-size: 16px;
+	padding: 2px 6px;
+}
+
+
+div#listBtnArea button.listBtnStyle {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+	background-color: pink;
+	border: none;
+	outline: none;
+}
+
+
+/* 리스트 /bbs/list.jsp 글쓰기, 검색 영역 끝 */
+
+/* 리스트 /bbs/list.jsp  페이징 영역 시작 */
+
+.prodListWrap div#listPagingArea{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.prodListWrap div#listPagingArea span {
+	width: 30px;
+	height: 30px;
+	font-weight: 12px;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.prodListWrap div#listPagingArea span:hover {
+	color: #aaa;
+}
+
+.prodListWrap div#listPagingArea span.nowPageNum {
+	font-size: 16px;
+	font-weight: bold;
+	background-color: rgba(136, 136, 136, 0.1);
+	cursor: default;
+}
+
+.prodListWrap div#listPagingArea span.moveBlockArea {
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	margin: 0 6px;
+	display: inline-block;
+}
+/* 리스트 /bbs/list.jsp  페이징 영역 끝 */
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// prodList.jsp 끝 ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// prodPost.jsp prodMod.jsp 시작////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+main#main>div.bbsWrite h2 {
+	text-align: center;
+	padding: 10px 0;	
+	margin-bottom: 20px;
+	background-color: rgba(0, 136, 255, 0.2);
+}
+
+#main>.bbsWrite table {
+	width: 100%;
+}
+
+#main>.bbsWrite table tbody th,
+#main>.bbsWrite table tbody td {
+	padding: 10px;
+	/*border: 1px solid #000;*/
+}
+#main>.bbsWrite table tbody th {
+	font-weight: bold;
+	text-align: right;
+}
+
+
+#main>.bbsWrite table tfoot td hr {
+	border: 2px solid #ccc;
+}
+#main>.bbsWrite table tfoot td {
+	width: 100%;
+	text-align: center;
+	padding: 4px 0;
+	/*border: 1px solid #aaa;*/
+}
+
+
+#main>.bbsWrite th.req::after {
+	content: " *";
+	color: #d74;
+	font-weight: bold;
+}
+
+::-webkit-file-upload-button {
+	font-weight: bold;
+	padding: 4px 10px;
+	cursor:pointer; 
+}
+
+#main>.bbsWrite table input[type=number] {
+	width: 120px;
+}
+
+#main>.bbsWrite select {
+	font-size: 17px;
+	padding: 5px 10px;
+}
+
+#main>.bbsWrite textarea#content {
+	height: 140px;
+}
+
+#main>.bbsWrite label {
+	margin: 0 20px;
+	cursor: pointer;
+}
+#main>.bbsWrite label span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+#main>.bbsWrite input,
+#main>.bbsWrite textarea  {
+	font-size: 17px;
+	padding: 4px 10px;
+}
+
+#main>.bbsWrite th.contentTh {
+	vertical-align: top;
+	padding-top: 30px;
+}
+
+
+#main>.bbsWrite span.spanFile {
+	padding: 10px;
+}
+
+
+#main>.bbsWrite label {
+	margin: 0 20px;
+	cursor: pointer;
+}
+#main>.bbsWrite label span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#main>.bbsWrite button {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 4px 20px;
+	cursor: pointer;
+}
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// prodPost.jsp prodMod.jsp 끝 ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*///////////// prodRead.jsp 시작 ///////////// */
+/*////////////////////////////////////////////////////////////////////*/
+div.prodReadWrap div#prodMain {
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+
+.prodReadWrap div.label {
+	height: 40px;
+}
+
+.prodReadWrap div.label>div {
+	padding: 3px;
+	margin: 10px 10px 5pX 0;
+	
+}
+
+.prodReadWrap div.label>div:first-child {
+	background-color: #f22;
+}
+
+.prodReadWrap div.label>div:nth-child(2) {
+	background-color: #fc1;
+}
+
+.prodReadWrap div.label>div:last-child {
+	background-color: #08f;
+}
+
+.prodReadWrap div.pName {
+	font-size: 32px;
+	margin: 10px 0;
+}
+.prodReadWrap div.priceArea div.discount {
+	margin: 10px 0;
+}
+.prodReadWrap div.priceArea div.oPrice {
+	font-size: 20px;
+	text-decoration: line-through;
+	margin-left: 10px;
+}
+
+.prodReadWrap div.priceArea div.sPrice {
+	margin: 10px 0;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.prodReadWrap input[type=number] {
+	font-size: 17px;
+	width: 80px;
+	text-align: center;
+}
+
+
+.prodReadWrap input[type=number]::-webkit-outer-spin-button,
+.prodReadWrap input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+
+.prodReadWrap button.size {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 4px 20px;
+	cursor: pointer;
+	margin: 10px 5px;
+	
+		background-color: (255,0,0,0.1);
+	border: none;
+	outline: none;
+	
+	
+
+}
+.prodReadWrap button.directOrderBtn {
+	width: 100%;
+	height: 40px;
+	font-size: 22px;
+	font-weight: bold;
+	
+	background-color: rgba(255, 0, 0, 0.1);
+	border: none;
+	outline: none;
+
+}
+.prodReadWrap div#articleBtnArea {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.prodReadWrap button.prodDetailBtn {
+	width: 300px;
+	height: 60px;
+	font-size: 23px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 10px 0;
+	
+	background-color: rgba(255, 0, 0, 0.1);
+	border: none;
+	outline: none;
+	
+}
+
+.prodReadWrap button#reviewBtn {
+	background-color: rgba(255, 0, 0, 0.1);
+	border: none;
+	outline: none;
+	
+	
+}
+
+.prodReadWrap div#review {
+	display: none;
+	
+}
+
+
+.prodReadWrap div#content {
+	font-size: 20px;
+}
+
+.prodReadWrap div#content {
+	font-size: 20px;
+}
+.prodReadWrap iframe#reviewIfm {
+	width: 100%;
+
+	overflow:auto; 
+	height:1700px;
+}
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*///////////// prodRead.jsp 끝  ///////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+
+div.mainLayout {
+	padding-left: 120px;
+}

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+
+div#modWrap{
+	width: 900px;
+	height: 1200px;
+	margin: 50px auto 0;
+}
+#modWrap #container{
+	width: 700px;
+	height: 900px;
+	margin:  0 auto ;
+   /*  border: 4px solid #f80; */
+}
+#title{
+	height: 50px;
+	font-size: 40px;
+	margin:40px 0 auto;
+	text-align:center;
+}
+#req{
+	margin:20px;
+	/* border: 1px solid #000; */
+	text-align:right;
+}
+table{
+	width: 800px;
+	height:850px;
+	margin: 0 auto;
+    /* border: 1px solid #000; */
+	font-size: 20px;
+}
+table input{
+	height:30px;
+}
+table input.refList{
+	width: 300px;
+	height:30px;
+}
+input.req{
+	height:30px;
+}
+input.refList{
+	width: 300px;
+	height:30px;
+}
+select#valSel{
+	height: 30px;
+}
+
+#btnArea{
+	width: 400px;
+	/*  border: 1px solid #000; */
+	margin-top:40px;
+	margin-left:140px;
+	border: none;
+}
+#btnArea button{
+	width: 150px;
+	height: 45px;
+	background-color: #fba6cc;
+	border: none;
+	color: #fff;
+	cursor:pointer;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius:8px;
+	margin-left:15px;
+}
+span.radioSel{
+margin: 0 10px;
+display: inline-block;
+transform:translateY(-11px);
+}
+div#sideMenu{
+	width: 300px;
+}
+
+/*//////////////////시작////////////////////*/
+/*//////////////////끝////////////////////*/

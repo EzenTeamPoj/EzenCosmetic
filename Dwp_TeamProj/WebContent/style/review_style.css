@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// 공통사항 시작 ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+main#main {
+	padding: 0;
+	margin: 0;
+}
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// 공통사항 끝 ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// reviewList.jsp 시작 ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+div#wrap.reviewListWrap {
+	width: 900px;
+}
+
+
+h1 {
+	margin-bottom: 30px;
+}
+
+.reviewListWrap div#pageInfo {
+	width: 870px;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.reviewListWrap div#tblNumInfo>span:first-child{
+	margin-right: 20px;
+}
+
+.reviewListWrap table.reviewListTbl td {
+	padding: 10px 5px;
+}
+
+.reviewListWrap hr {
+	margin-bottom: 40px;
+}
+
+
+
+/* 리스트 페이지 버튼 공통 스타일 시작 */
+.reviewListWrap button {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+}
+/* 리스트 페이지 버튼 공통 스타일 끝 */
+
+.reviewListWrap table {
+	width: 900px;
+}
+
+.reviewListWrap table.reviewNoTbl {
+	text-align: center;
+}
+/* 리스트 /bbs/list.jsp 글쓰기, 검색 영역 시작 */
+.reviewListWrap form#searchFrm {
+	padding-top: 20px;
+	justify-content: flex-end;
+}
+
+.reviewListWrap form#searchFrm div {
+	margin: 4px;
+}
+
+.reviewListWrap form#searchFrm select, 
+.reviewListWrap form#searchFrm input {
+	font-size: 16px;
+	padding: 2px 6px;
+}
+
+
+.reviewListWrap button.listBtnStyle {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+	background-color: pink;
+	border: none;
+	outline: none;
+}
+
+/* 리스트 /bbs/list.jsp 글쓰기, 검색 영역 끝 */
+
+/* 리스트 /bbs/list.jsp  페이징 영역 시작 */
+
+.reviewListWrap tr#listPagingArea{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.reviewListWrap tr#listPagingArea span {
+	width: 30px;
+	height: 30px;
+	font-weight: 12px;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.reviewListWrap tr#listPagingArea span:hover {
+	color: #aaa;
+}
+
+.reviewListWrap tr#listPagingArea span.nowPageNum {
+	font-size: 16px;
+	font-weight: bold;
+	background-color: rgba(136, 136, 136, 0.1);
+	cursor: default;
+}
+
+.reviewListWrap tr#listPagingArea span.moveBlockArea {
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	margin: 0 6px;
+	display: inline-block;
+}
+/* 리스트 /bbs/list.jsp  페이징 영역 끝 */
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// reviewList.jsp 끝 ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// reviwPost.jsp 시작////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+main#main>div.bbsWrite h2 {
+	text-align: center;
+	padding: 10px 0;	
+	margin-bottom: 20px;
+	background-color: rgba(0, 136, 255, 0.2);
+}
+
+#main>.bbsWrite table {
+	width: 100%;
+}
+
+#main>.bbsWrite table tbody td {
+	padding: 10px;
+	/*border: 1px solid #000;*/
+}
+#main>.bbsWrite table tbody td:first-child {
+	width: 100px;
+	font-weight: bold;
+	text-align: right;
+}
+
+
+#main>.bbsWrite td.req::after {
+	content: " *";
+	color: #d74;
+	font-weight: bold;
+}
+
+
+::-webkit-file-upload-button {
+	font-weight: bold;
+	padding: 4px 10px;
+	cursor:pointer; 
+}
+
+
+#main>.bbsWrite textarea#content {
+	height: 140px;
+}
+
+#main>.bbsWrite input,
+#main>.bbsWrite textarea  {
+	width: 700px;
+	font-size: 17px;
+	padding: 4px 10px;
+}
+
+#main>.bbsWrite td.contentTD {
+	vertical-align: top;
+	padding-top: 30px;
+}
+
+
+#main>.bbsWrite span.spanFile {
+	padding: 10px;
+}
+
+
+hr {
+	margin: 10px 0;
+}
+
+#aside>div#submitBtn {
+	text-align: center;
+}
+aside#aside button {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 4px 20px;
+	cursor: pointer;
+	
+	
+}
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// reviwPost.jsp 끝 ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/

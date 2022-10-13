@@ -1,0 +1,307 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+/*////////////////////////////////////////////////////////////////////*/
+/*/////////////////// /indd/header.jsp 시작 ////////////////////////  */
+/*////////////////////////////////////////////////////////////////////*/
+
+/*/////header-wrapper 시작 /////  */
+*{
+	user-select:none;
+}
+div#header-wrapper{
+	width: 1200px;
+    /*border: 1px solid #000;*/
+    margin: 0 auto;
+}
+
+/*#headerTopArea 영역 시작*/
+#header-wrapper>header#pageHeader #headerTopArea{
+	width: 1200px;
+	margin-bottom: 25px;
+	/* border: 2px solid #f00; */
+}
+#header-wrapper>#pageHeader #headerTopArea button{
+background-color: #fff;
+border: none;
+padding: 5px;
+margin: 2px;
+font-size: 16px;
+font-weight: bold;
+}
+#header-wrapper>#pageHeader #headerTopArea li.bar{
+	transform: translateY(6px);
+}
+/*#headerTopArea 영역 끝*/
+
+/*#main-penel-top 영역 시작*/
+#header-wrapper>header#pageHeader div#main-penel-top ul{
+	/* border: 1px solid #000; */ 
+	justify-content:flex-end;
+}
+/*#main-penel-top 영역 끝*/
+
+/*#headerContentArea 영역 시작*/
+#header-wrapper>header#pageHeader #headerContentArea{
+	height: 100px;
+	margin-bottom: 25px;
+	/* border: 1px solid #f80;  */	
+}
+/*#headerContentArea 영역 끝*/
+
+/*#headerLogoArea 영역 시작*/
+#header-wrapper>header#pageHeader #headerLogoArea{
+	width: 360px;
+	height:96px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+/*#headerLogoArea 영역 끝*/
+
+/*#headerSideArea 영역시작*/
+#header-wrapper #headerContentArea #headerSideArea{
+	flex:1;
+	/* border: 1px solid #f00; */
+    
+}
+/*#headerSideArea 영역끝*/
+
+/*/////header-wrapper 끝 /////  */
+
+/*///// SearchArea 영역 시작/////*/
+#header-wrapper #headerContentArea div#SearchArea{
+	width: 400px;
+	/* border: 1px solid #000; */
+	margin: 0 50px;
+}
+.box{
+    position: relative;
+    /* border: 1px solid #000; */
+    margin-top:20px;
+}
+
+.input {
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fba6cc;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #777;
+    outline: none;
+    transition: .5s;
+    user-select:none;
+}
+.box:hover input{
+    width: 350px;
+    background: #746a7d;
+    color: #fff;
+
+}
+.box i{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    color: #fba6cc;
+    transition: .2s;
+    user-select:none;
+}
+.box:hover i{
+
+    z-index: 1;
+    cursor:pointer;
+}
+.input {
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fba6cc;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #777;
+    outline: none;
+    transition: .5s;
+    user-select:none;
+}
+.box #typeSearch{
+    font-weight: bold;
+    height: 50px;
+    position: relative;
+    outline:none;
+    border: none;
+    transition: .5s;
+    border-bottom: 2px solid #fba6cc;
+    user-select:none;
+}
+.box:hover #typeSearch{
+    background: #746a7d;
+    cursor:pointer;
+    outline:none;
+    border: none;
+    border-bottom: 2px solid #fba6cc;
+    user-select:none;
+}
+/*///// SearchArea 영역 끝/////*/
+
+/*/////#iconArea 영역 시작 /////*/
+#header-wrapper #headerContentArea #iconArea{
+	height:96px;
+	/* border: 1px solid #000; */
+}
+#header-wrapper #headerContentArea #iconArea .iconImg{
+	margin: 0 20px;
+	cursor:pointer;
+	transform: translateY(15px);
+}
+/*/////#iconArea 영역 끝 /////*/
+
+/*///// nav#headerGNBArea 시작 /////*/
+#header-wrapper #headerGNBArea{
+	justify-content:space-between;
+}
+#header-wrapper #headerGNBArea>ul#mainMenu a {
+    width: 150px;
+    font-size: 16.5px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.95);
+    display: inline-block;
+}
+
+/* 메인메뉴 좌우 테두리선 겹침 처리 */
+#header-wrapper #headerGNBArea>ul#mainMenu>li.mainLi:not(:last-child)>a {    
+    border-right: none;
+}
+/* 메인메뉴 좌우 테두리선 겹침 처리 */
+/* 서브메뉴 상하 테두리선 겹침 처리 */
+#header-wrapper #headerGNBArea #mainMenu ul.subMenu>li.subLi>a {    
+    width: 151px;
+    border-top: none;    
+}
+
+/*#mainMenu a기능추가 */
+#header-wrapper #headerGNBArea>ul#mainMenu a:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/*#mainMenu a기능추가 */
+
+#header-wrapper #headerGNBArea>ul#mainMenu>li.mainLi {
+    position: relative;
+    z-index: 1;
+}
+
+#header-wrapper #headerGNBArea ul.subMenu {
+    display: none;
+    position: absolute;
+}
+/*#sideMenu 영역 시작 */
+#header-wrapper #sideMenu{
+
+	justify-content:flex-end;
+}
+/*#sideMenu 영역 끝 */
+
+/* .MainMenu_2 영역 시작*/
+#header-wrapper ul.mainMenu_2  a{
+	width: 150px;
+    font-size: 16.5px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.95);
+    display: inline-block;
+	cursor:pointer;
+}
+#header-wrapper ul.mainMenu_2  a:hover{
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+/*ul.MainMenu_2 영역 끝*/
+
+/*///// nav#headerGNBArea 시작 /////*/
+
+/*/////header-wrapper 끝 /////  */
+
+/*////////////////////////////////////////////////////////////////////*/
+/*/////////////////// /indd/header.jsp 끝 ////////////////////////  */
+/*////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////// /indd/footer.jsp시작 ///////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+
+footer#footer{
+	width: 1300px;
+	height: 150px;
+	border: 1px solid #000;
+	background-color:#746a7d;	
+	margin: 0 auto;
+}
+/* #footer #footerContent{
+	 border: 1px solid #000;
+} */
+#footer #footerTop{
+	width: 750px;
+	height: 40px;
+	padding: 10px 20px;
+	border-bottom: 1px solid #aaa;
+	color: #000;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-right: 50px;
+}
+#footer #footerTop li>a{
+	justify-content: space-between;
+	padding: 8px 20px;
+	cursor: pointer;
+}
+#footer #footerSideTop img{
+	margin-right: 15px;
+/* 	border: 1px solid #000; */
+}
+#footer>#footerTxtArea{
+	/* border: 1px solid #000; */
+    margin: 15px auto 0;
+}
+#footer>#footerTxtArea>address {
+	font-size: 14px;
+	color: #fff;
+	text-align:center;
+	
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////// /indd/footer.jsp끝 ///////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+
+/*////////////// adminWrap시작 /////////////////*/
+#adminWrap table#loginTBL{
+	width: 500px;
+	margin: 0 auto;
+}
+#adminWrap table#loginTBL #ajoinBtn{
+	border: none;
+	background-color:#fff;
+	font-size: 20px;
+}
+
+
+/*////////////// adminWrap끝 /////////////////*/
+
+
+
+/*////////////// 시작 /////////////////*/
+/*////////////// 끝 /////////////////*/
+
+
+/*시작 */
+/* 끝 */

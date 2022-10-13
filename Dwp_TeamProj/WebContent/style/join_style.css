@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+
+div#joinWrap{
+	width: 800px;
+	height: 1200px;
+	margin: 0 auto;
+}
+#joinWrap #container{
+	width: 800px;
+	height: 1000px;
+	margin:120px 0 auto;
+/*     border: 4px solid #f80; */
+}
+#title{
+	height: 50px;
+	font-size: 40px;
+	margin:40px 0 auto;
+	text-align:center;
+}
+#req{
+	margin:20px;
+	/* border: 1px solid #000; */
+	text-align:right;
+}
+table{
+	width: 600px;
+	height:850px;
+	margin: 0 auto;
+/* 	border: 1px solid #000; */
+	font-size: 20px;
+}
+input.reqs{
+	height:30px;
+}
+input.refList{
+	width: 300px;
+	height:30px;
+}
+select#valSel{
+	height: 30px;
+}
+form{
+	height:800px;
+/* 	border: 2px solid #f00; */
+}
+button#joinBtn{
+	width: 250px;
+	height: 65px;
+	font-size: 25px;
+	font-weight: bold;
+	background-color: #fba6cc;
+	color: #fff;
+	cursor:pointer;
+	border: none;
+	border-radius:8px;
+	transform:translateX(270px);
+}
+button#dpChk{
+	width: 70px;
+	height: 20px;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #fba6cc;
+	color: #fff;
+	cursor:pointer;
+	border: none;
+	border-radius:8px;
+}
+th.req:before{
+	 content: "* ";
+     color: red;
+}
+div.req:before{
+	 content: "* ";
+     color: red;
+}
+
+input.birth{
+	width: 80px;
+	height: 30px;
+}
+/*//////////////////시작////////////////////*/
+/*//////////////////끝////////////////////*/

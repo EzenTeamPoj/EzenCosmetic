@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+
+
+
+/*///////////////// 시작  /////////////////////*/
+/* 여기도 수정함 복붙 */
+div#wrap.wishlistWrap div#contents{
+	margin: 50px auto;
+	flex: 1; 
+}
+
+.wishlistWrap div#title {
+	margin: 20px 50px 50px;
+}
+
+.wishlistWrap div#title>h1 {
+	padding-left: 10px;
+}
+
+.wishlistWrap div#pageInfo {
+	width: 900px;
+	justify-content: space-between;
+	margin: 20px 50px;
+
+}
+.wishlistWrap div#tblNumInfo>span:first-child{
+	margin-right: 20px;
+}
+
+.wishlistWrap table#wishlistTbl {
+	width: 900px;
+	margin-left: 50px;
+	border-collapse: collapse;
+}
+.wishlistWrap table#wishlistTbl th {
+	background-color: rgba(255, 0, 0, 0.1);
+	
+}
+.wishlistWrap table#wishlistTbl tbody th,
+.wishlistWrap table#wishlistTbl tbody td {
+	border: 1px solid #000;
+	border-left: none;
+}
+
+.wishlistWrap table#wishlistTbl th:first-child,
+.wishlistWrap table#wishlistTbl td:first-child {
+	 border-right: none;
+}
+
+.wishlistWrap table#wishlistTbl th:nth-child(3),
+.wishlistWrap table#wishlistTbl td:nth-child(3) {
+	border-right: none; 
+}
+
+.wishlistWrap table#wishlistTbl th:last-child,
+.wishlistWrap table#wishlistTbl td:last-child {
+	border-right: none;
+	text-align: center;
+}
+
+
+.wishlistWrap table#wishlistTbl th:first-child{
+	width: 150px;
+	text-align: left;
+	padding: 10px 5px;
+
+}
+
+
+.wishlistWrap table#wishlistTbl tbody td {
+	padding: 10px 0 10px 8px;
+}
+
+
+.wishlistWrap table#wishlistTbl td input.chkOne {
+	margin-right: 20px;
+	
+}
+
+.wishlistWrap table#wishlistTbl td img {
+	vertical-align: middle;
+	
+}
+
+.wishlistWrap table#wishlistTbl label {
+	cursor: pointer;
+}
+
+.wishlistWrap table#wishlistTbl input[type=number] {
+	text-align: center;
+}
+
+.cartListWrap table#cartTbl input[type=number]::-webkit-outer-spin-button,
+.cartListWrap table#cartTbl input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+
+.wishlistWrap table#wishlistTbl a.pNamePrn:hover {
+	color: #aaa;
+}
+
+.wishlistWrap table#wishlistTbl th:nth-child(2) {
+	width: 480px;
+}
+.wishlistWrap table#wishlistTbl td:nth-child(2) {
+	width: 480px;
+	font-size: 18px;
+}
+
+.wishlistWrap table#wishlistTbl th:nth-child(3),
+.wishlistWrap table#wishlistTbl td:nth-child(3) {
+	width: 150px;
+	text-align: center;
+}
+
+.wishlistWrap table#wishlistTbl td:nth-child(3) {
+	font-size: 18px;
+}
+
+.wishlistWrap table#wishlistTbl td:last-child button {
+	width: 24px;
+	height: 24px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+
+
+
+.wishlistWrap table#wishlistTbl tfoot tr:first-child>td:first-child {
+	padding-top: 20px;
+	vertical-align: top;
+}
+.wishlistWrap table#wishlistTbl tfoot tr:first-child>td:first-child>button {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+	
+}
+
+.wishlistWrap table#wishlistTbl tfoot tr:first-child>td:last-child {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.wishlistWrap table#wishlistTbl tfoot button#orderMoveBtn {
+	width: 250px;
+	height: 50px;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+	
+	margin-right: 160px;
+	
+	background-color: pink;
+	border: none;
+	outline: none;
+}
+
+
+/* 리스트 /bbs/list.jsp  페이징 영역 시작 */
+
+.wishlistWrap tr#listPagingArea{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.wishlistWrap tr#listPagingArea span {
+	width: 30px;
+	height: 30px;
+	font-weight: 12px;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.wishlistWrap tr#listPagingArea span:hover {
+	color: #aaa;
+}
+
+.wishlistWrap tr#listPagingArea span.nowPageNum {
+	font-size: 16px;
+	font-weight: bold;
+	background-color: rgba(136, 136, 136, 0.1);
+	cursor: default;
+}
+
+.wishlistWrap tr#listPagingArea span.moveBlockArea {
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	margin: 0 6px;
+	display: inline-block;
+}
+/* 리스트 /bbs/list.jsp  페이징 영역 끝 */
+
+
+
+/*///////////////// 끝  /////////////////////*/
+
+/*//////// 시작  /////////*/
+
+/*//////// 끝  /////////*/
+
+/* 시작 */
+
+/* 끝 */

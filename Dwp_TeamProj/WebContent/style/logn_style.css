@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+
+* {
+     box-sizing: border-box;
+ }
+
+
+ div#loginWrap {
+     width: 1028px;
+     height: 800px;
+     padding: 20px;
+    /*  border: 1px solid #000; */
+     margin: 40px auto 0;
+     /* Contents => Padding => Border => Margin */
+ }
+
+ /* table#loginTBL 시작 */
+ form#loginFrm{
+ margin: 0 auto;
+ }
+form#loginFrm>table#loginTBL {
+     width: 500px;
+     /* border: 1px solid #000; */
+     border-collapse: collapse;
+     margin: 300px auto 0;
+ }
+
+/* #loginTBL td {
+     border: 1px solid #000;
+ }  */
+
+#loginTBL td:first-child {
+     width: 456px;
+     padding-right: 17px;
+ }
+
+#loginTBL td>input {
+     width: 100%;
+     font-size: 16px;
+     padding: 17px 20px;
+     border: 1px solid #ccc;
+ }
+
+#loginTBL td>input:focus {
+     border: 1px solid #fba6cc;
+     outline: none;
+     /* 포커스 브리딩(Focus Breathing) 제거 =>
+         포커스(focus)를 설정했을 때 대상의 위치차이로 발생하는
+         울렁임 현상 */
+ }
+
+
+#loginTBL td>input::placeholder {
+     color: #999;
+ }
+
+#loginTBL tr:nth-child(1)>td:nth-child(1) {
+     padding-bottom: 5px;
+ }
+
+#loginTBL tr:nth-child(2)>td:nth-child(1) {
+     padding-top: 5px;
+ }
+
+#loginTBL td#tdLogInBtn {
+     width: 234px;
+     text-align: center;
+ }
+
+#loginTBL td#tdLogInBtn button {
+     color: #fff;
+     width: 100%;
+     height: 118px;
+     font-size: 19px;
+     border: none;
+     border-radius: 6px;
+     background-color: #fba6cc;
+     cursor: pointer;
+
+ }
+
+#loginTBL td#tdLogInBtn button:hover {
+     background-color: #fbaed0;
+
+     transition: all 0.3s;
+     /* 트랜지션, 전이(효과) */
+ }
+
+#loginTBL caption {
+     font-size: 15px;
+     text-align: left;
+     /* border: 1px solid #f80; */
+     margin-top: 8px;
+
+     caption-side: bottom;
+ }
+
+ /* table#loginTBL 끝 */
+
+/*//////////////////시작////////////////////*/
+/*//////////////////끝////////////////////*/

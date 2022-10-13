@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+div#wrap{
+	width: 500px;
+	margin: 0 auto;
+	border: 1px solid #000;
+}
+iframe#subMenu{
+	width: 400px;
+	margin-top:20px;
+	padding: 20px;
+	margin-right: 60px;
+}
+div#ListArea>ul>li{
+	padding: 30px 0;
+}
+
+/*//////////////////시작////////////////////*/
+/*//////////////////끝////////////////////*/

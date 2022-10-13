@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url("/style/style_Reset.css");
+#myPageContent{
+	
+	margin-left: 40px;
+}
+#reviewArea h3{
+	padding: 20px;
+}
+#reviewArea{
+	margin-top: 20px;
+	width:660px;
+	height:120px;
+	background:pink;
+	border-radius: 6px;
+}
+#reviewArea p{
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 17px;
+	color: #fff;
+}
+#reviewArea span{
+   font-weight: bold;
+   float:right;	
+   margin-right: 20px;
+}
+/*//////////////////////////// 시작 ///////////////////////////////*/
+/*//////////////////////////// 끝 ///////////////////////////////*/
+
+
+
+/*////////////// 시작 /////////////////*/
+/*////////////// 끝 /////////////////*/
+
+
+/*시작 */
+/* 끝 */
