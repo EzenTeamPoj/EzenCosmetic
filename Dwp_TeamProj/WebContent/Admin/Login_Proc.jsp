@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <jsp:useBean id="aMgr" class="pack_Admin.AdminMgr" />
 <% 
 String aId = request.getParameter("aId");
@@ -18,7 +18,7 @@ if (loginRes) {
 <%
 } else {
 %>	
-	alert("¾ÆÀÌµğ ¶Ç´Â ºñ¹Ğ¹øÈ£¸¦ È®ÀÎÇØÁÖ¼¼¿ä.");
+	alert("ì•„ì´ë”” ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ë¥¼ í™•ì¸í•´ì£¼ì„¸ìš”.");
 	location.href="/Admin/index.jsp";
 <%
 }
