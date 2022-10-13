@@ -67,15 +67,20 @@ $(function() {
 			
 			/* 푸터 영역 끝*/
 	
-
-	/////////* 부모창 링크 이동 끝*/////////
-		
+	
 		/* 메인메뉴 pulldown 시작*/
 	$("ul#mainMenu>li.mainLi").mouseover(function () {
        $(this).children("ul.subMenu").stop().slideDown();
+	   $("iframe#headerIfm" , parent.document).css({
+			"position": "relative",
+			"z-index" : "10"
+		});
     });
     $("ul#mainMenu>li.mainLi").mouseout(function () {
         $(this).children("ul.subMenu").stop().slideUp();
+		$("iframe#headerIfm" , parent.document).css({
+			"position": "static"
+		});
     });
 
 
