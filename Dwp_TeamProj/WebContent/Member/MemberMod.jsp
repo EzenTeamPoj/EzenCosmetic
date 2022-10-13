@@ -31,7 +31,7 @@ String remainAddr = Addr.substring(7);
 	  
 	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-	  <script src ="/script/ApiScript.js"></script>
+	  <script src ="/script/script_Common.js"></script>
 	  <script src="/script/script_Member_Mod.js"></script>
 	</head>
    <body>
@@ -110,17 +110,7 @@ String remainAddr = Addr.substring(7);
          </td>
          </tr>
          <tr>
-         <th class="req">상세주소</th>
-         <td>
-         <input type="text" id="detailAddress" placeholder="상세주소"
-         class="refList">
-         </td>
-         </tr>
-         <tr>
-         <th class="req">참고항목</th>
-         <td>
-         <input type="text" id="extraAddress" placeholder="참고항목"
-         class="refList">
+         <td colspan="2">
          <input type="hidden" name="uAddr" id="uAddr" />
          </td>
          </tr>
