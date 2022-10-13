@@ -26,7 +26,7 @@ String aId_Session = (String)session.getAttribute("aId_Session");
 		<form action="/bbs_Notice/writeProc.jsp" method="post"
 			enctype="multipart/form-data">
 
-
+<!-- 안녕하세요 -->
 
 			<main id="main">
 			

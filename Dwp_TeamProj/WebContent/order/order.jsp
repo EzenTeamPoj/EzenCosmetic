@@ -66,7 +66,7 @@
 		<link rel="shortcut icon" href="#">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-	    <script src ="/script/ApiScript.js"></script>
+	    <script src ="/script/script_Common.js"></script>
 		<script src="/script/script_Order.js"></script>
 	</head>
 	<body>

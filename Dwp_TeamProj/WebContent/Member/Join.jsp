@@ -4,14 +4,14 @@
 <html lang="ko">
 	<head>
 	  <meta charset="UTF-8">
-	  <title>Insert title here</title>
+	  <title>JoinPage</title>
 	  <link rel="stylesheet" href="/style/common_style.css">
-	  <link rel="stylesheet" href="/style/join_style.css">
+	  <link rel="stylesheet" href="/style/join&login_style.css">
 	  <link rel="shorcut icon" href="#">
 	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 	  <script src="/script/script_Join&Login.js"></script>
-	  <script src ="/script/ApiScript.js"></script>
+	  <script src ="/script/script_Common.js"></script>
 	</head>
   <body>
 	  <header>
@@ -86,17 +86,7 @@
          </td>
          </tr>
          <tr>
-         <th>상세주소</th>
-         <td>
-         <input type="text" id="detailAddress" placeholder="상세주소"
-         class="refList">
-         </td>
-         </tr>
-         <tr>
-         <th>참고항목</th>
-         <td>
-         <input type="text" id="extraAddress" placeholder="참고항목"
-         class="refList">
+         <td colspan="2">
          <input type="hidden" name="uAddr" id="uAddr" />
          </td>
          </tr>
