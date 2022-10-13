@@ -215,27 +215,47 @@ div#wrap.orderListWrap div#contents{
 
 /*/////////////////  ordrList 끝  /////////////////////*/
 
-/*///////////////  orde 시작  /////// /////////*/
+/*///////////////  order 시작  /////// /////////*/
+
+div#wrap.orderWrap h1 {
+	margin: 50px auto;
+}
+
+div#wrap.orderWrap hr {
+	margin: 20px 0;
+}
 div#wrap.orderWrap table{
 	width: 600px;
 	margin: 20px 300px;
-}
-
-div#wrap.orderWrap table th {
-	padding: 10px 5px;
+	
+	font-size: 20px;
 }
 
 div#wrap.orderWrap table th {
 	width: 200px;
+	padding: 20px;
+	text-align: right;
 }
 
-div#wrap.orderWrap table td input.refList {
-	width: 350px;
+div#wrap.orderWrap table td input {
+	height:30px;
+}
+div#wrap.orderWrap table td input#address {
+	width: 300px;
 }
 div#wrap.orderWrap table td.center{
 	text-align: left;
 	justify-content: space-between;
 }
+
+div#wrap.orderWrap table td label {
+	margin-right: 10px;
+}
+
+div#wrap.orderWrap table td input[type=radio].payWay {
+	vertical-align: middle;
+}
+
 
 div#wrap.orderWrap button#orderBtn {
 	width: 100%;

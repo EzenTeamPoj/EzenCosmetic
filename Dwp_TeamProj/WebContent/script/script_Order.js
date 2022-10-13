@@ -4,15 +4,18 @@ $(function(){
 	$("button#orderBtn").click(function(){
       let postcode = $("input#postcode").val().trim();
       let address= $("input#address").val().trim();
-      let detailAddress =$("input#detailAddress").val().trim();
-      let extraAddress = $("input#extraAddress").val().trim();
-      let uAddr=  "("+postcode+")"+ address +detailAddress + extraAddress;
+      let uAddr=  "("+postcode+")"+ address;
       $("input#uAddr").val(uAddr);
 
     // 주소 병합 소스만들기 끝
 	});
 	
 	$("form#orderFrm").submit(function(){
+		oAddr = $("input#uAddr").val();
+		if(oAddr=="" || oAddr == null) {
+			alert("배송지를 입력해주세요");
+			return false;
+		}
 		let chkNum = $("input[type=radio].payWay:checked").length;
 		if(chkNum==0) {
 			alert("결제수단을 선택해주세요");

@@ -1,3 +1,4 @@
+<%@page import="java.text.DecimalFormat"%>
 <%@page import="pack_ProdBoard.CartBean"%>
 <%@page import="java.util.Vector"%>
 <%@page import="pack_ProdBoard.ProdBoardMgr"%>
@@ -52,6 +53,8 @@
 	String postNum = Addr.substring(1,6);
 	String remainAddr = Addr.substring(7);
 	
+	String pattern = "#,###원";
+	DecimalFormat df = new DecimalFormat(pattern);
 	
 	
 
@@ -89,30 +92,16 @@
 						<tr>
 		     				<th>배송지 우편번호</th>
 		     				<td>
-						     <input type="text" id="postcode" placeholder="우편번호" class="req" value="<%=postNum%>">
+						     <input type="text" id="postcode" placeholder="우편번호" value="<%=postNum%>">
 					         <input type="button" onclick="execDaumPostcode()" value="우편번호 찾기" ><br>
 						    </td>
 				       </tr>
 				       <tr>
-				        	<th >배송지 주소</th>
+				        	<th>배송지 주소</th>
 					     	<td>
-				         		<input type="text" id="address" placeholder="주소" class="refList" value="<%= remainAddr%>"><br>
+				         		<input type="text" id="address" placeholder="주소" value="<%= remainAddr%>"><br>
+				         		<input type="hidden" name="delivAdd" id="uAddr" />
 				         	</td>
-			          </tr>
-			          <tr>
-					         <th>상세주소</th>
-					         <td>
-						         <input type="text" id="detailAddress" placeholder="상세주소"
-						         class="refList">
-					         </td>
-			          </tr>
-			          <tr>
-					         <th>참고항목</th>
-					         <td>
-						         <input type="text" id="extraAddress" placeholder="참고항목"
-						         class="refList">
-						         <input type="hidden" name="delivAdd" id="uAddr" />
-					         </td>
 			          </tr>
 			          <tr>
 			          	<th>상품명/개수</th>
@@ -160,21 +149,21 @@
 						<tr>
 							<th>총상품가격</th>
 							<td>
-								<%=goodsPay %>
+								<%=df.format(goodsPay) %>
 								<input type="hidden" name="goodsPay" value="<%=goodsPay %>">
 							</td>
 						</tr>
 						<tr>
 							<th>배송비</th>
 							<td>
-								<%=delivFee %>
+								<%=df.format(delivFee) %>
 								<input type="hidden" name="delivFee" value="<%=delivFee %>">
 							</td>
 						</tr>
 						<tr>
 							<th>총결제금액</th>
 							<td>
-								<%= totalPay %>
+								<%= df.format(totalPay) %>
 								<input type="hidden" name="totalPay" value="<%=totalPay %>">
 							</td>
 						</tr>
