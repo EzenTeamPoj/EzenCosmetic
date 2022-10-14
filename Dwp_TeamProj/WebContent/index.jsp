@@ -24,7 +24,7 @@ String aId_Session = (String)session.getAttribute("aId_Session");  %>
     
 	<div id="wrap">
 	 <div id="slideshowArea">
-	                
+	                <!-- 안녕하세요 주석입니다. -->
 	                <!-- 2. 슬라이드 프레임(= 틀) 3600 x 300 -->
 	                <div id="slideFrame" class="dFlex">	                
 	                
