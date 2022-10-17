@@ -1,15 +1,15 @@
 package pack_Order;
 
 public class UOrderBean {
-	int num;    //num 주문번호
-	String orderId;
-	String delivAdd;
-	int goodsPay;
-	int delivFee;
-	int totalPay;
-	String payWay;
-	String ordetStatus;
-	String orderTM;
+	private int num;    //num 주문번호
+	private String orderId;
+	private String delivAdd;
+	private int goodsPay;
+	private int delivFee;
+	private int totalPay;
+	private String payWay;
+	private String ordetStatus;
+	private String orderTM;
 	
 	
 	public int getNum() {

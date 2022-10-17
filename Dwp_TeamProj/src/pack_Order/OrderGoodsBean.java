@@ -1,10 +1,10 @@
 package pack_Order;
 
 public class OrderGoodsBean {
-	int num;
-	int orderNum;
-	int pNum;
-	int pVolumn;
+	private int num;
+	private int orderNum;
+	private int pNum;
+	private int pVolumn;
 	
 	String pName;
 	public int getNum() {

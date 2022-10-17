@@ -1,21 +1,21 @@
 package pack_ProdBoard;
 
 public class ProdBoardBean {
-	int num;
-	String regId;               /*regId : 상품 등록 ID */
-	String pName;
-	String pType;				/*pType : 상품분류*/
-	int stockVolumn;		/*stockVolumn: 재고*/
-	int salesVolumn;			/*salesVolumn : 판매량*/
-	int oriPrice;				/*oriPrice 원래 가격*/
-	int sellPrice;				/*sellPrice 실제 판매 가격*/
-	String [] sellLabel;		/*sellLabel : BEST, NEW, SALE, NONE*/
-	String content;			
-	String regTM;
-	int readCnt;					/*count : 조회수*/
-	String oriFileName;
-	String sysFileName;
-	int fileSize;
+	private int num;
+	private String regId;               /*regId : 상품 등록 ID */
+	private String pName;
+	private String pType;				/*pType : 상품분류*/
+	private int stockVolumn;		/*stockVolumn: 재고*/
+	private int salesVolumn;			/*salesVolumn : 판매량*/
+	private int oriPrice;				/*oriPrice 원래 가격*/
+	private int sellPrice;				/*sellPrice 실제 판매 가격*/
+	private String [] sellLabel;		/*sellLabel : BEST, NEW, SALE, NONE*/
+	private String content;			
+	private String regTM;
+	private int readCnt;					/*count : 조회수*/
+	private String oriFileName;
+	private String sysFileName;
+	private int fileSize;
 	
 	public int getNum() {
 		return num;

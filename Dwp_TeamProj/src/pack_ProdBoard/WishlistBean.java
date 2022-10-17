@@ -1,13 +1,13 @@
 package pack_ProdBoard;
 
 public class WishlistBean {
-	int num;
-	String uId;
-	int pNum;
+	private int num;
+	private String uId;
+	private int pNum;
 	
-	String pName;
-	int sellPrice;
-	String sysFileName;
+	private String pName;
+	private int sellPrice;
+	private String sysFileName;
 	
 	public int getNum() {
 		return num;

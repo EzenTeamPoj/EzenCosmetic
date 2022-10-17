@@ -1,10 +1,10 @@
 package pack_ProdBoard;
 
 public class CartBean {
-	int num;
-	String uId;
-	int pNum;
-	int pVolumn;
+	private int num;
+	private String uId;
+	private int pNum;
+	private int pVolumn;
 	
 	String pName;
 	int sellPrice;
