@@ -6,7 +6,9 @@ public class OrderGoodsBean {
 	private int pNum;
 	private int pVolumn;
 	
-	String pName;
+	private String pName;
+	
+	
 	public int getNum() {
 		return num;
 	}

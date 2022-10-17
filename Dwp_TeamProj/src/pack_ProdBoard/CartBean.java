@@ -6,10 +6,10 @@ public class CartBean {
 	private int pNum;
 	private int pVolumn;
 	
-	String pName;
-	int sellPrice;
-	String sysFileName;
-	int stockVolumn;
+	private String pName;
+	private int sellPrice;
+	private String sysFileName;
+	private int stockVolumn;
 	
 	public int getStockVolumn() {
 		return stockVolumn;
