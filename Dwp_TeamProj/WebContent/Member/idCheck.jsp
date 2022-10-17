@@ -14,7 +14,7 @@ String uId = request.getParameter("uId");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이디 중복 체크</title>
     <link rel="stylesheet" href="/style/style_Common.css">    
-    <script src="/source/jquery-3.6.0.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/script/script_Join&Login.js"></script>
 </head>
 
