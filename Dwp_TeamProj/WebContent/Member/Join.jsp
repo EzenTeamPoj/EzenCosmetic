@@ -11,7 +11,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script
 	src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-<script src="/script/script_Join&Login.js"></script>
+<script src="/script/script_Join&Login_h.js"></script>
 <script src="/script/script_Common.js"></script>
 </head>
 <body>
@@ -25,14 +25,15 @@
 		<div id="container">
 			<div id="title">회원가입</div>
 			<div id="req" class="req">필수입력사항</div>
-			<form action="/Member/Join_Proc.jsp" id="joinFrm">
+			<form  id="joinFrm">
 				<table>
 					<tbody>
 						<tr>
 							<th class="req">아이디</th>
 							<td><input type="text" placeholder="아이디를 입력해주세요" name="uId"
-								id="uId" class="reqs"> <span><button
-										type="button" id="dpChk">중복확인</button></span> <!-- dpChk: duplicateChek -->
+								id="uId" class="reqs"> <span>
+								<button type="button" id="dpChk">중복확인</button></span> <!-- dpChk: duplicateChek -->
+							     <input type="hidden" id="id_Chek" value="" />
 							</td>
 						</tr>
 						<tr>
@@ -97,11 +98,11 @@
 							<td>
 								<div class="info" id="birth">
 									<select class="box" id="birth-year">
-										<option disabled selected>출생 연도</option>
+										<option selected value="">출생 연도</option>
 									</select> <select class="box" id="birth-month">
-										<option disabled selected>월</option>
+										<option selected value="">월</option>
 									</select> <select class="box" id="birth-day">
-										<option disabled selected>일</option>
+										<option selected value="">일</option>
 									</select>
 								</div> <input type="hidden" name="uBirth" id="uBirth">
 								 <input type="hidden" name="uAge" id="uAge">
