@@ -11,7 +11,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script
 	src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-<script src="/script/script_Join&Login_h.js"></script>
+<script src="/script/script_Join&Login.js"></script>
 <script src="/script/script_Common.js"></script>
 </head>
 <body>
