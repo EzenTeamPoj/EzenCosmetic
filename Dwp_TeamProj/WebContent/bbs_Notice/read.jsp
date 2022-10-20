@@ -147,7 +147,7 @@ session.setAttribute("bean", bean);
 								if(aId_Session!=null){
 									%>
 								<button type="submit" id="modBtn">수 정</button>
-								<button type="button" id="delBtn">삭 제</button>
+								<button type="button" id="delNotBtn">삭 제</button>
 								<%
 								}
 								

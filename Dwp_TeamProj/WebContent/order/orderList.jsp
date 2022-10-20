@@ -91,7 +91,7 @@
 	     <li><a href="/cart/cartList.jsp" id="cart">장바구니</a></li>
 	     <li><a href="/wishlist/wishlist.jsp" id="wish">찜 제품</a></li>
 	     <li><a href="">주문내역</a></li>
-	     <li><a href="/bbs_Inquire/inquirebbs.jsp" id="inq">1대1문의</a></li>  
+	     <li><a href="/bbs_Inquire/list.jsp" id="inq">1대1문의</a></li>  
 	       <hr>
 	      <li><a href="/Member/MemberMod.jsp" id="mod">회원정보수정</a></li>
 	      <li><a href="/Member/MemberDel.jsp" id="del">회원탈퇴</a></li>

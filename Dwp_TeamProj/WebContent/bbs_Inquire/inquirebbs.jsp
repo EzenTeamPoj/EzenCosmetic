@@ -157,7 +157,7 @@ String aId_Session = (String) session.getAttribute("aId_Session");
 
 
 
-				<iframe src="/bbs_Inquire/list.jsp" frameborder="0" width="100%"></iframe>
+			
 
 			</div>
 

@@ -103,7 +103,138 @@ totalBlock = (int)Math.ceil((double)totalPage/pagePerBlock);		//0.2 올림 1됨.
 		</div>
 
 	    	<!-- 실제 작업 영역 시작 -->
+	    	
+	    	
+	    	
+	    		<div class="moveMenu">
+		<a href="/bbs_Notice/noticebbs.jsp">공지사항</a>
+		<a href="/bbs_Inquire/list.jsp">1:1문의</a>
+				
+				</div>	
+	    	
     		<div id="contents" class="bbsList">
+    		
+    		<div id="select_buy_period">
+
+
+					<p>구매기간</p>
+					<ul id="select_month" class="dFlex">
+						<li><button data-month="-1">1개월</button></li>
+						<li><button data-month="-3">3개월</button></li>
+						<li><button data-month="-6">6개월</button></li>
+						<li><button data-month="-12">12개월</button></li>
+					</ul>
+
+					<div id="select_range">
+
+						<select name="" id="">
+							<option value="2022">2022</option>
+							<option value="2021">2021</option>
+						</select> <label>년</label> <select name="" id="start_month">
+							<option value="01">1</option>
+							<option value="02">2</option>
+							<option value="03">3</option>
+							<option value="04">4</option>
+							<option value="05">5</option>
+							<option value="06">6</option>
+							<option value="07">7</option>
+							<option value="08">8</option>
+							<option value="09">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select><label for="">월</label> <select name="" id="start_date">
+							<option value="01">1</option>
+							<option value="02">2</option>
+							<option value="03">3</option>
+							<option value="04">4</option>
+							<option value="05">5</option>
+							<option value="06">6</option>
+							<option value="07">7</option>
+							<option value="08">8</option>
+							<option value="09">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select><label for="">일</label>
+						<span> ~ </span>
+						<select name="" id="">
+							<option value="2022">2022</option>
+							<option value="2021">2021</option>
+						</select> <label>년</label> <select name="" id="end_month">
+							<option value="01">1</option>
+							<option value="02">2</option>
+							<option value="03">3</option>
+							<option value="04">4</option>
+							<option value="05">5</option>
+							<option value="06">6</option>
+							<option value="07">7</option>
+							<option value="08">8</option>
+							<option value="09">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select><label for="">월</label> <select name="" id="end_date">
+							<option value="01">1</option>
+							<option value="02">2</option>
+							<option value="03">3</option>
+							<option value="04">4</option>
+							<option value="05">5</option>
+							<option value="06">6</option>
+							<option value="07">7</option>
+							<option value="08">8</option>
+							<option value="09">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select><label for="">일</label>
+
+				<button id="select_period_buy">조회하기</button>
+				<!-- 제품 구매 DB 접속해서 데이터 select 필요 ( 구매 기간 col 있어야함) -->
+
+
+					</div>
+				</div>
+				<!-- 내가 올린 문의글 -->
+				<!-- 회원 정보 DB에 내가 올린 문의글 컬럼도 있어야함. -->
 
     		<%
 				String prnType ="";
@@ -243,7 +374,7 @@ totalBlock = (int)Math.ceil((double)totalPage/pagePerBlock);		//0.2 올림 1됨.
 
 						</td>
 
-						<td colspan="3">
+						<td colspan="4">
 
 							<form name="searchFrm" class="dFlex"
 									id="searchFrm">
@@ -443,8 +574,8 @@ totalBlock = (int)Math.ceil((double)totalPage/pagePerBlock);		//0.2 올림 1됨.
     	</main>
     	<!--  main#main  -->
 		
-		<iframe src="/indd/footer.jsp" scrolling="no" width="100%" frameborder=0 id="footerIfm"></iframe>
     </div>
     <!-- div#wrap  -->
+		<iframe src="/indd/footer.jsp" scrolling="no" width="100%" frameborder=0 id="footerIfm"></iframe>
 </body>
 </html>

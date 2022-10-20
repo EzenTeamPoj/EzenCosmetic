@@ -12,7 +12,7 @@ String aId_Session = (String)session.getAttribute("aId_Session");  %>
 	  <link rel="stylesheet" href="/style/indd.css">
 	  <link rel="shortcut icon" href="#">
 	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	  <script src="/script/script_Common"></script>
+	  <script src="/script/script_Common.js"></script>
 	  <script src="/script/script_main_Script.js"></script>
 	</head>
   <body>

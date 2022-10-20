@@ -15,9 +15,6 @@ String nowPage = request.getParameter("nowPage");
 String asubject = bean.getAsubject();
 String aName = bean.getaName();
 String acontent = bean.getAcontent();
-out.print("asubject : " + asubject + "<br>");
-out.print(aName);
-out.print(acontent);
 %>
 
 <!DOCTYPE html>

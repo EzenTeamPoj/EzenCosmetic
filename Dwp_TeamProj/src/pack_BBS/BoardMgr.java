@@ -86,10 +86,10 @@ public class BoardMgr {
 					 new DefaultFileRenamePolicy()
 					 );
 
-			 if (multi.getFilesystemName("upFileName") != null) {
-				 	oriFileName = multi.getOriginalFileName("upFileName");
-				 	systemFileName  = multi.getFilesystemName("upFileName");
-					fileSize = (int) multi.getFile("upFileName").length();
+			 if (multi.getFilesystemName("aupFileName") != null) {
+				 	oriFileName = multi.getOriginalFileName("aupFileName");
+				 	systemFileName  = multi.getFilesystemName("aupFileName");
+					fileSize = (int) multi.getFile("aupFileName").length();
 				}
 
 			 BoardBean bean = new BoardBean();
@@ -282,7 +282,7 @@ public class BoardMgr {
 			if (keyWord.equals("null") || keyWord.equals("")) {
 				// 검색어가 없을 경우
 				sql = "select * from inquireTbl "
-						+ "order by ref desc, pos asc limit ?, ?"; //start 와 end
+						+ "order by ref desc, pos asc,num desc limit ?, ?"; //start 와 end
 				//DB에서는 ref  가 같으면 먼저 입력된글이 위로 올라온다. 
 				objPstmt = objConn.prepareStatement(sql);
 				objPstmt.setInt(1, start);
